@@ -27,9 +27,9 @@ if __name__ == '__main__':
         # Prime checking loop
         for i in range(2, n):
             if n % i == 0:
-                print(n, 's equal to', i, '*', n // i, ': ', n, 'is not '
-                                                                'a prime '
-                                                                'number.')
+                print(n, 'is equal to', i, '*', n // i, ': ', n, 'is not '
+                                                                 'a prime '
+                                                                 'number.')
                 break
 
         else:

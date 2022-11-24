@@ -1,4 +1,3 @@
-import os
 import argparse
 
 if __name__ == '__main__':
@@ -9,21 +8,29 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        'number',
+        'integer',
+        metavar = 'integer',
         type = int,
-        help = 'Enter the integer you wish to check whether it is prime or'
+        help = 'Enter the integer you wish to check whether it is prime or '
                'not.'
     )
     args = vars(parser.parse_args())
 
     # Variable creation according to the argument
-    n = args['number']
+    n = args['integer']
 
-    # Prime checking loop
-    for i in range(2, n):
-        if n % i == 0:
-            print(n, "is equal to", i, "*", n // i, ": ", n, "is not a prime number.")
-            break
+    if n <= 0 :
+        raise ValueError('the integer must be greater than zero.')
 
     else:
-        print(n, "is a prime number")
+
+        # Prime checking loop
+        for i in range(2, n):
+            if n % i == 0:
+                print(n, 's equal to', i, '*', n // i, ': ', n, 'is not '
+                                                                'a prime '
+                                                                'number.')
+                break
+
+        else:
+            print(n, 'is a prime number\n')

@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # Variable creation according to the argument
     n = args['integer']
 
-    if n <= 0 :
+    if n <= 0:
         raise ValueError('the integer must be greater than zero.')
 
     else:

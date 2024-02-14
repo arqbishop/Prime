@@ -1,4 +1,4 @@
-# Prime
+# isprime
 Short program that checks whether the given interger(s) is / are prime or not.
 
 ## How to use

@@ -5,7 +5,7 @@ Short program that checks whether the given interger(s) is / are prime or not.
 - Make sure you have Python installed on your machine (Python 3.x).
 - Place the program in the folder of your choice.
 - Run your SHELL and move to the choosen folder.
-- Type the command `py isprime.py [enter integer or integer sequence here]`.
+- Type the command `python3 isprime.py [enter integer or integer sequence here]`.
 
 ## Why?
 Prime numbers are interesting. [Their usage in cryptography](https://stackoverflow.com/questions/439870/why-are-primes-important-in-cryptography) even more.<br/>
